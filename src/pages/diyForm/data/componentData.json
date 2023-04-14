@@ -1,0 +1,48 @@
+{
+  "componnetList": [
+    {
+      "groupTitle": "LEFT",
+      "lists": [
+        {
+          "required": true,
+          "label": "输入框",
+          "placeholder": "请输入内容",
+          "type": "input",
+          "value": ""
+        },
+        {
+          "required": true,
+          "label": "文本框",
+          "placeholder": "请输入内容",
+          "type": "textarea",
+          "value": ""
+        },
+        {
+          "required": true,
+          "label": "数字输入框",
+          "placeholder": "请输入内容",
+          "type": "number",
+          "value": ""
+        },
+        {
+          "required": true,
+          "label": "单选框",
+          "placeholder": "请选择",
+          "type": "radio",
+          "value": "",
+          "options": [
+            {
+              "id": 1,
+              "label": "选项一"
+            },
+            {
+              "id": 2,
+              "label": "选项二"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "inherit": true
+}

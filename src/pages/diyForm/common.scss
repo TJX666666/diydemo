@@ -1,0 +1,113 @@
+.sortable-item.sortable-item-head {
+  margin: 0 0 7.5px;
+
+  .item-preview {
+    cursor: default;
+  }
+}
+
+.sortable-item {
+  margin: 7.5px 0;
+  position: relative;
+  width: 100%;
+
+  .item-preview {
+    position: relative;
+    width: 100%;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px dashed red;
+
+      ::v-deep .anticon.anticon-close-circle {
+        display: inline-block !important;
+      }
+    }
+
+    ::v-deep .ant-form-item {
+      margin: 0 !important;
+    }
+
+    ::v-deep .ant-input.ant-input-disabled, ::v-deep .ant-input-number-input {
+      background-color: #fff !important;
+    }
+
+    ::v-deep .ant-input-number, ::v-deep .ant-time-picker, ::v-deep .ant-calendar-picker {
+      width: 70%;
+    }
+
+    ::v-deep .anticon.anticon-close-circle {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      z-index: 100;
+      font-size: 20px;
+      opacity: .8;
+      line-height: 0;
+      background: #b2b2b2;
+      border-radius: 10px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    ::v-deep .ant-checkbox-group .ant-checkbox-wrapper,
+    ::v-deep .ant-radio-group .ant-radio-wrapper {
+      margin-bottom: 5px;
+      display: block;
+    }
+  }
+
+  .active {
+    border: 1px dashed red;
+  }
+
+  .item-config {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    cursor: default;
+
+    .add-btn {
+      width: 100%;
+    }
+  }
+}
+
+.design-editor-item-common {
+  margin-left: 20px;
+  padding: 20px;
+  position: absolute;
+  left: 100%;
+  top: 15px;
+  z-index: 7;
+  width: 355px;
+  min-height: 28px;
+  font-size: 14px;
+  color: #353535;
+  background: #f8f8f8;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 20px;
+    height: 0;
+    width: 0;
+    border: solid transparent;
+    pointer-events: none;
+  }
+
+  &:after {
+    margin-top: -7px;
+    border-color: transparent;
+    border-right-color: #f8f8f8;
+    border-width: 7px;
+  }
+}
